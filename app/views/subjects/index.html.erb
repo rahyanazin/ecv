@@ -1,0 +1,8 @@
+<% @subjects.each do |s| %>
+  <div class="center jumbotron">
+	  <h2><b><%= s.title %></b></h2>
+	  <div><%= truncate(s.description, :length=>35) %></div>
+	  <br>
+	  <%= link_to "Mais...", s %>
+  </div>
+<% end %>
